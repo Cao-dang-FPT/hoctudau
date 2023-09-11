@@ -1,0 +1,61 @@
+body {
+    font-family: "Roboto", sans-serif;
+}
+.container {
+    max-width: 960px;
+    margin: auto;
+}
+header {
+    display: flex;
+    /* thuộc tính justify-content dành cho thành phần cha */
+    /* Thuộc tính justify-content có tác dụng cho các thành phần con nằm cùng 1 hàng theo trục X */
+    /* Giá trị space-between có tác dụng chia đều khoảng cách 3 thành phần con 
+    https://css-tricks.com/almanac/properties/j/justify-content/
+    */
+    justify-content: space-between;
+
+    /* Thuộc tính align-items dành cho thành phần cha */
+    /* Thuộc tính align-items có tác dụng cho thành phần con căn giữa trên dưới theo trục Y */
+    /* https://css-tricks.com/almanac/properties/a/align-items/ */
+    align-items: center;
+}
+.menu {
+    display: flex;
+    /* thuộc tính list-style: none có tác dụng bỏ dấu chấm trước danh sách */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.menu li {
+    margin: 0 15px;
+}
+.menu li a {
+    /* Bỏ gạch chân cho thẻ a */
+    text-decoration: none;
+    color: #000;
+}
+.account {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.account li {
+    margin: 0 15px;
+}
+.account li a {
+    /* Bỏ gạch chân cho thẻ a */
+    text-decoration: none;
+    color: #000;
+}
+
+/* ========= PRODUCT ====== */
+.product-list {
+    /* Thiết lập hệ thống lưới cho div */
+    display: grid;
+    /* Chia 3 cột */
+    grid-template-columns: 1fr 1fr 1fr;
+    /* Tạo khoảng cách giữa các cột là 30px */
+    grid-gap: 30px;
+}
