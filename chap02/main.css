@@ -65,19 +65,26 @@ header {
 }
 .product {
     position: relative;
+    /* Tất cả thành phần nào vượt qua element cha thì ẩn đi */
+    overflow: hidden;
 }
 .product-info {
-    display: none;
     background: #fff;
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
     text-align: center;
+
+    /* Thêm hiệu ứng */
+    transition: all 0.3s ease-in-out;
+    /* Mặc định div nằm dưới */
+    transform: translateY(100%);
 }
-/* Khi di chuyển chuột vào product thì nội dung hiện lên */
+/* Khi di chuyển chuột vào product thì nội dung hiện từ dưới lên */
 .product:hover .product-info {
     display: block;
+    transform: translateY(0);
 }
 .product-name a {
     font-size: 20px;
