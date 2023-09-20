@@ -1,0 +1,140 @@
+:root {
+    --color-dark: #212529;
+    --color-gray: #dee2e6;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+}
+.headline {
+    font-size: 64px;
+    color: var(--color-dark);
+    margin: 0;
+    padding: 0;
+}
+.btn {
+    display: inline-block;
+    font-size: 14px;
+    border: 1px solid #000;
+    padding: 5px 10px;
+    background: #fff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.btn-dark {
+    background: var(--color-dark);
+}
+.btn-primary {
+    color: var(--color-dark);
+}
+
+/* Thuộc tính chung CSS */
+
+.max-w-xl {
+    max-width: 1140px;
+}
+.max-w-lg {
+    max-width: 880px;
+}
+.m-auto {
+    margin: auto;
+}
+.m-0 {
+    margin: 0;
+}
+.p-0 {
+    padding: 0;
+}
+.bg-dark {
+    background: var(--color-dark);
+}
+
+.bg-gray {
+    background: var(--color-gray);
+}
+.text-dark {
+    color: var(--color-dark);
+}
+.text-gray {
+    color: var(--color-gray);
+}
+.text-center {
+    text-align: center;
+}
+.text-2xl {
+    font-size: 64px;
+}
+.flex {
+    display: flex;
+}
+.justify-between {
+    justify-content: space-between;
+}
+.items-center {
+    align-items: center;
+}
+.items-self-center {
+    align-self: center;
+}
+.items-self-end {
+    align-self: flex-end;
+}
+.min-h-550 {
+    min-height: 550px;
+}
+.grid {
+    display: grid;
+}
+.grid-cols-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+.grid-cols-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+.gap-4 {
+    grid-gap: 16px;
+}
+.gap-8 {
+    grid-gap: 32px;
+}
+/* ============ BEGIN ====== */
+.main-menu {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.main-menu__link {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 26px 20px;
+}
+/* ========== ABOUT ME ======== */
+.about-me {
+    padding: 100px 0;
+}
+.about-me-row {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+/* ========== SERVICES ======== */
+.services {
+    background: var(--color-gray);
+}
+/* ======== SECTION ====== */
+.section-homepage {
+    padding: 50px 0;
+}
+.section-header {
+    text-align: center;
+    max-width: 70%;
+    margin: auto;
+}
+/* ========== SERVICES ===== */
+
+.services__item {
+    text-align: center;
+}
